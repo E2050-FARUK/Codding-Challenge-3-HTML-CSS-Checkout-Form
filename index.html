@@ -7,6 +7,106 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <main class="content">
+        <div class="container_l">
+            <form action="#" id="info">
+                <div id="contact">
+                    <h3>Contact Information</h3>
+                    <div class="info1">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+                        <img src="./IMG/email.png" alt="#">
+                    </div>
+                    <div class="info2">
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Enter your phone..." required>
+                        <img src="./IMG/phone.png" alt="#">
+                        
+                    </div>
+                </div>
+                <div id="shipping">
+                    <h3>Shipping Adress</h3>
+                    <div class="info3">
+                        <label for="name">Full name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your full name..." required>
+                        <img src="./IMG/person.png" alt="#">
+                    </div>
+                    <div class="info4">
+                        <label for="adress">Adress</label>
+                        <input type="text" name="adress" id="adress" placeholder="Enter your adress..." required>
+                        <img src="./IMG/home.png" alt="#">
+                    </div>
+                    <div class="info5">
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="Enter your city..." required>
+                        <img src="./IMG/town.png" alt="#">
+                    </div>
+                    <div class="info6">
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="Turkey" selected>Turkey</option>
+                            <option value="Germany">Germany</option>
+                            <option value="France">France</option>
+                            <option value="USA">USA</option>
+                        </select>
+                        <img src="./IMG/world.png" alt="#">
+                    </div>
+                    <div class="info7">
+                        <label for="post">Post Code</label>
+                        <input type="text" name="post" id="post" placeholder="Enter your postal code..." required>
+                        <img src="./IMG/mail.png" alt="">
+                    </div>
+                    <div class="cbox">
+                        <input type="checkbox" name="checkbox" id="check">
+                        <label for="check">See this information next time</label>
+                    </div>
+                </div>
+                <button id="btn-submit" type="submit">
+                    Continue
+                </button>
+            </form>
+        </div>
+        <div class="container_2">
+
+            <div id="vintage">
+                <img src="./IMG/photo1.png" alt="bag1" id="bag1">
+                
+                <div id="vintage_text">
+                    <h2 id="vintage_back">Vintage Backbag</h2>
+                    <div><span class="price">$54.99</span> <del> $94.99 </del></div>
+                    <div class="qty-box">
+                        <div><img src="./IMG/minus.png" alt="minus"></div>
+                        <div>1</div>
+                        <div><img src="./IMG/add.png" alt="add"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="levi">
+                <img src="./IMG/photo2.png" alt="bag2" id="bag2">
+                
+                <div id="levi_text">
+                    <h2 id="levi_bag">Levi Shoes</h2>
+                    <div><span class="price">$74.99</span> <del>$124.99</del></div>
+                    <div class="qty-box">
+                        <div><img src="./IMG/minus.png" alt="minus"></div>
+                        <div>1</div>
+                        <div><img src="./IMG/add.png" alt="add"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="total">
+                <hr>
+                <span>Shipping </span> <span class="last_price">$19</span>
+                <hr>
+                <span>Total</span> <span class="last_price">$148.98</span>
+            </div>
+
+        </div>
+    </main>
 </body>
 </html>
